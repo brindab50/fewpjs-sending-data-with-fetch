@@ -1,12 +1,7 @@
-// Add your code here
 
-// create a function that takes two strings as arguments
-// on representing a user's name and the other representing 
-// a users email 
 
-function submitData(usersName, usersEmail){
-    let usersData = 'http://localhost:3000/users'
-    return fetch(usersData, {
+function submitData(name, email){
+    return fetch('http://localhost:3000/users', {
         method: 'POST',
         headers: {
             "Content-Type": "application/json",
@@ -29,5 +24,3 @@ function submitData(usersName, usersEmail){
     })
 
     }
-    
-
